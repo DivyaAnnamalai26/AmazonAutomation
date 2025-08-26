@@ -1,0 +1,185 @@
+{
+  "config": {
+    "configFile": "/Users/bd/Desktop/PlayWrightAutomation/playwright.config.ts",
+    "rootDir": "/Users/bd/Desktop/PlayWrightAutomation/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/bd/Desktop/PlayWrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Desktop Chrome",
+        "name": "Desktop Chrome",
+        "testDir": "/Users/bd/Desktop/PlayWrightAutomation/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "amazon.test.ts",
+      "file": "amazon.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Amazon Automation",
+          "file": "amazon.test.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login, search product, add to cart, verify, delete, sign out",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4337,
+                      "error": {
+                        "message": "Error: locator.waitFor: Target page, context or browser has been closed",
+                        "stack": "Error: locator.waitFor: Target page, context or browser has been closed\n    at LoginPage.login (/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts:107:28)\n    at /Users/bd/Desktop/PlayWrightAutomation/src/tests/amazon.test.ts:23:7",
+                        "location": {
+                          "file": "/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts",
+                          "column": 28,
+                          "line": 107
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:107\n\n\u001b[0m \u001b[90m 105 |\u001b[39m       \u001b[90m// Wait for successful login\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[36mconst\u001b[39m accountElement \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList-nav-line-1'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m accountElement\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'Login completed successfully'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 110 |\u001b[39m       console\u001b[33m.\u001b[39merror(\u001b[32m'Login failed:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts",
+                            "column": 28,
+                            "line": 107
+                          },
+                          "message": "Error: locator.waitFor: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39m../pages/LoginPage.ts:107\n\n\u001b[0m \u001b[90m 105 |\u001b[39m       \u001b[90m// Wait for successful login\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[36mconst\u001b[39m accountElement \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList-nav-line-1'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m accountElement\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'Login completed successfully'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 110 |\u001b[39m       console\u001b[33m.\u001b[39merror(\u001b[32m'Login failed:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.login (/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts:107:28)\u001b[22m\n\u001b[2m    at /Users/bd/Desktop/PlayWrightAutomation/src/tests/amazon.test.ts:23:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Step 1: Navigating to login page...\n"
+                        },
+                        {
+                          "text": "Condition3 triggered\n"
+                        },
+                        {
+                          "text": "Successfully navigated to login page\n"
+                        },
+                        {
+                          "text": "Handling email input...\n"
+                        },
+                        {
+                          "text": "Clicking continue...\n"
+                        },
+                        {
+                          "text": "Handling password input...\n"
+                        },
+                        {
+                          "text": "Clicking sign in...\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Login failed: locator.waitFor: Target page, context or browser has been closed\n    at LoginPage.login \u001b[90m(/Users/bd/Desktop/PlayWrightAutomation/\u001b[39msrc/pages/LoginPage.ts:107:28\u001b[90m)\u001b[39m\n    at \u001b[90m/Users/bd/Desktop/PlayWrightAutomation/\u001b[39msrc/tests/amazon.test.ts:23:7 {\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts'\u001b[39m,\n      line: \u001b[33m107\u001b[39m,\n      column: \u001b[33m28\u001b[39m,\n      function: \u001b[32m'LoginPage.login'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('#nav-link-accountList-nav-line-1')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'#nav-link-accountList-nav-line-1'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@50'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@50'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('#nav-link-accountList-nav-line-1')\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1756092924692\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: locator.waitFor: Target page, context or browser has been closed'\u001b[39m,\n      stack: \u001b[32m'Error: locator.waitFor: Target page, context or browser has been closed\\n'\u001b[39m +\n        \u001b[32m'    at LoginPage.login (/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts:107:28)\\n'\u001b[39m +\n        \u001b[32m'    at /Users/bd/Desktop/PlayWrightAutomation/src/tests/amazon.test.ts:23:7'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        },
+                        {
+                          "text": "Test failed: locator.waitFor: Target page, context or browser has been closed\n    at LoginPage.login \u001b[90m(/Users/bd/Desktop/PlayWrightAutomation/\u001b[39msrc/pages/LoginPage.ts:107:28\u001b[90m)\u001b[39m\n    at \u001b[90m/Users/bd/Desktop/PlayWrightAutomation/\u001b[39msrc/tests/amazon.test.ts:23:7 {\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts'\u001b[39m,\n      line: \u001b[33m107\u001b[39m,\n      column: \u001b[33m28\u001b[39m,\n      function: \u001b[32m'LoginPage.login'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m\"Wait for selector locator('#nav-link-accountList-nav-line-1')\"\u001b[39m,\n    apiName: \u001b[32m'locator.waitFor'\u001b[39m,\n    params: {\n      selector: \u001b[32m'#nav-link-accountList-nav-line-1'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      omitReturnValue: \u001b[33mtrue\u001b[39m,\n      state: \u001b[32m'visible'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@50'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@50'\u001b[39m,\n      _title: \u001b[32m\"Wait for selector locator('#nav-link-accountList-nav-line-1')\"\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1756092924692\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: locator.waitFor: Target page, context or browser has been closed'\u001b[39m,\n      stack: \u001b[32m'Error: locator.waitFor: Target page, context or browser has been closed\\n'\u001b[39m +\n        \u001b[32m'    at LoginPage.login (/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts:107:28)\\n'\u001b[39m +\n        \u001b[32m'    at /Users/bd/Desktop/PlayWrightAutomation/src/tests/amazon.test.ts:23:7'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-08-25T03:35:20.317Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bd/Desktop/PlayWrightAutomation/test-results/amazon-Amazon-Automation-L-a6320-cart-verify-delete-sign-out-Desktop-Chrome/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/bd/Desktop/PlayWrightAutomation/test-results/amazon-Amazon-Automation-L-a6320-cart-verify-delete-sign-out-Desktop-Chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bd/Desktop/PlayWrightAutomation/src/pages/LoginPage.ts",
+                        "column": 28,
+                        "line": 107
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a376402b347ad7c46d54-c35e60fe06e1cb2d65d3",
+              "file": "amazon.test.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-25T03:35:20.072Z",
+    "duration": 5267.084999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

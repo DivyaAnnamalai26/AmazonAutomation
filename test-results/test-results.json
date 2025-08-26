@@ -1,0 +1,150 @@
+{
+  "config": {
+    "configFile": "/Users/bd/Desktop/PlayWrightAutomation/playwright.config.ts",
+    "rootDir": "/Users/bd/Desktop/PlayWrightAutomation/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "always"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml",
+          "embedAttachmentsAsProperty": "testrun_evidence"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/bd/Desktop/PlayWrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Desktop Chrome",
+        "name": "Desktop Chrome",
+        "testDir": "/Users/bd/Desktop/PlayWrightAutomation/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "amazon.test.ts",
+      "file": "amazon.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Amazon Automation",
+          "file": "amazon.test.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Scenario : Login, search , add , verify, delete, sign out",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18371,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Logged in user : Divya\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T18:38:59.145Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bd/Desktop/PlayWrightAutomation/test-results/amazon-Amazon-Automation-S-35e05--add-verify-delete-sign-out-Desktop-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bd/Desktop/PlayWrightAutomation/test-results/amazon-Amazon-Automation-S-35e05--add-verify-delete-sign-out-Desktop-Chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a376402b347ad7c46d54-c9eb6cab51278bbde432",
+              "file": "amazon.test.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-26T18:38:58.854Z",
+    "duration": 19324.552,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,17 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="24.568743">
+<testsuite name="amazon.test.ts" timestamp="2025-08-23T05:34:31.689Z" hostname="Desktop Chrome" tests="1" failures="0" skipped="0" time="23.898" errors="0">
+<testcase name="Amazon Automation › Login, search, add to cart, verify, delete, sign out" classname="amazon.test.ts" time="23.898">
+<system-out>
+<![CDATA[Logged in user: 
+  
+  Hello, Divya
+  Account & Lists
+  
+  
+  
+  
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
