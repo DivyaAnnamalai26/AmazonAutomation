@@ -1,5 +1,5 @@
 
-# TEST_CASES.md — Amazon UI Automation (Playwright)
+# Amazon UI Automation (Playwright)
 
 > **Scope:** Login, search, add to cart, cart delete (most recent), and sign out, with cross‑domain (.com/.ca) and OTP handling notes.
 
